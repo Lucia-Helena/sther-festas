@@ -1,56 +1,49 @@
 import styled from "styled-components";
 
-export const HeaderContainer = styled.header`
-width: 100%;
-height: 72px;
-padding: 0 32px;
+export const Container = styled.header`
+  width: 100%;
+  height: 64px;
 
-display: flex;
-align-items: center;
-justify-content: space-between;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-position: fixed;
-top: 0;
-left: 0;
-z-index: 1000;
+  background: #ffffff;
+  border-bottom: 1px solid #eee;
 
-background-color: rgba(255, 255, 255, 0.9 );
-backdrop-filter: blur(8px);
-`;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 
-export const Logo = styled.h1`
-font-size: 1.4rem;
-font-weight: 700;
+  @media (max-width: 640px) {
+    height: 56px;
+  }
 `;
 
 export const Nav = styled.nav`
-display: flex;
-gap: 24px;
+  display: flex;
+  gap: 32px;
 
-@media (max-width: 768px) {
- display: nome;
-}
+  @media (max-width: 640px) {
+    gap: 20px;
+  }
 `;
 
 export const NavItem = styled.a`
   text-decoration: none;
   color: #333;
   font-weight: 500;
+  font-size: 15px;
+
+  padding: 8px 4px;
+
+  transition: color 0.2s ease;
 
   &:hover {
-  color: #ff4d6d
+    color: #25d366;
   }
-`;
 
-export const WhatsAppButton = styled.a`
-  background-color: #25d366;
-  color: white;
-  padding: 10px 16px;
-  border-radius: 20px;
-  text-decoration: none;
-  font-weight: 600;
-
-  &:hover {
-    opacity: 0.9;
+  @media (max-width: 640px) {
+    font-size: 14px;
   }
 `;

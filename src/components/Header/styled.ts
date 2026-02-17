@@ -7,6 +7,8 @@ export const Container = styled.header`
   display: flex;
   align-items: center;
   justify-content: center;
+  justify-content: space-between;
+
 
   background: #ffffff;
   border-bottom: 1px solid #eee;
@@ -19,6 +21,19 @@ export const Container = styled.header`
     height: 56px;
   }
 `;
+
+export const Logo = styled.img`
+  width: 50px; 
+  height: auto;
+  object-fit: contain;
+  border-radius: 50%;
+
+
+  @media (max-width: 640px) {
+    height: 32px;
+  }
+`;
+
 
 export const Nav = styled.nav`
   display: flex;

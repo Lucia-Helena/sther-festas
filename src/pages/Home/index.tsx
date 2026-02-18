@@ -6,6 +6,8 @@ import Header from "../../components/Header";
 import ImageCarousel from "../../components/ImageCarousel";
 import FloatingButtons from "../../components/FloatingButtons";
 
+   
+
 import ThemeSelector from "../../components/ThemeSelector";
 import AddonsSelector from "../../components/AddonsSelector";
 import OrderSummary from "../../components/OrderSummary";
@@ -24,10 +26,7 @@ function Home() {
       <ImageCarousel />
 
       <Container>
-        <Title>Aluguel de Temas para Festas</Title>
-        <Subtitle>
-          Infantil, adulto, corporativo e muito mais. Monte sua festa do seu jeito.
-        </Subtitle>
+       
 
         <ThemeSelector
           themes={themes}
